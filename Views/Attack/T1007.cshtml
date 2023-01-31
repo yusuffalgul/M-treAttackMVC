@@ -1,0 +1,75 @@
+﻿@model FinalProject.Models.Customer
+@{
+    ViewBag.Title = "T1007";
+
+}
+
+
+<div class="row container">
+    <div class="col-lg-6">
+        <ol>
+            <li><a href="https://attack.mitre.org/matrices/enterprise/">Enterprise</a></li>
+            <ul>
+                <li>Reconnaissance</li>
+                <li>Resource Development</li>
+                <li>Initial Access</li>
+                <li>Execution</li>
+                <li>Persistence</li>
+                <li>Privilege Escalation</li>
+                <li>Defense Evasion</li>
+                <li>Credential Access</li>
+                <li>Discovery</li>
+                <li>Lateral Movement</li>
+                <li>Collection</li>
+                <li>Command and Control</li>
+                <li>Exfiltration</li>
+                <li>Impact</li>
+            </ul>
+            <li><a href="https://attack.mitre.org/matrices/mobile/">Mobile</a></li>
+            <ul>
+                <li>Initial Access</li>
+                <li>Execution</li>
+                <li>Persistence</li>
+                <li>Privilege Escalation</li>
+                <li>Defense Evasion</li>
+                <li>Credential Access</li>
+                <li>Discovery</li>
+                <li>Lateral Movement</li>
+                <li>Collection</li>
+                <li>Command and Control</li>
+                <li>Exfiltration</li>
+                <li>Impact</li>
+            </ul>
+            <li><a href="https://attack.mitre.org/matrices/ics/">ICS</a></li>
+            <ul>
+                <li>Initial Access</li>
+                <li>Execution</li>
+                <li>Persistence</li>
+                <li>Privilege Escalation</li>
+                <li>Evasion</li>
+                <li>Discovery</li>
+                <li>Discovery</li>
+                <li>Lateral Movement</li>
+                <li>Command and Control</li>
+                <li>Inhibit Response Function</li>
+                <li>Impair Process Control</li>
+                <li>Impact</li>
+            </ul>
+        </ol>
+    </div>
+    <div class="col-lg-6">
+          <h1>T1007 - System Service Discovery</h1>
+            <div class="attack_description">
+                <p>
+                    Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as sc query, tasklist /svc, systemctl --type=service, and net start.
+
+                    Adversaries may use the information from System Service Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+                </p>
+            </div>
+            <form class="form-group" method="post" enctype="multipart/form-data">
+                <input type="text" name="testCompanyName1007" />
+                <button class="btn btn-primary">Test It Now!</button>
+            </form>
+    </div>
+
+</div>

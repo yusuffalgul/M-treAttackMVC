@@ -1,0 +1,34 @@
+﻿@model FinalProject.Models.Customer
+
+@{
+    ViewBag.Title = "SignUp";
+}
+<form class="form-group" method="post">
+    <div style="margin : 15px;">
+        @Html.LabelFor(x => x.CompanyName)
+        @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+    </div>
+
+    <div style="margin : 15px;">
+        @Html.LabelFor(x => x.ContactName)
+        @Html.TextBoxFor(x => x.ContactName, new { @class = "form-control" })
+    </div>
+
+    <div style="margin : 15px;">
+        @Html.LabelFor(x => x.PhoneNumber)
+        @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+    </div>
+
+    <div style="margin : 15px;">
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+
+    <div style="margin : 15px;">
+        @Html.LabelFor(x => x.Password)
+        @Html.TextBoxFor(x => x.Password, new { @class = "form-control" , @type = "password" })
+    </div>
+
+    <button class="btn btn-info" style="margin-left : 13px;">Register</button>
+</form>
+

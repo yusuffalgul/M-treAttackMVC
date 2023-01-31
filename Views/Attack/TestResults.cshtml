@@ -1,0 +1,34 @@
+﻿@model FinalProject.Models.TestResult
+@{
+    ViewBag.Title = "TestResults";
+
+}
+
+<div style="margin : 15px; height : auto;">
+    <form class="form-group" method="post">
+        <label>Company Name</label>
+        <input type="text" name="testResultName" />
+        <button class="btn btn-primary">Result</button>
+
+        <div class="row">
+            <div class="col-lg-4 fa-border">
+                <h1>Test Result 1</h1>
+                <hr />
+                @TempData["Result"]
+            </div>
+            <div class="col-lg-4 fa-border">
+                <h1>Test Result 2</h1>
+                <hr />
+                @TempData["Result2"]
+            </div>
+            <div class="col-lg-4 fa-border">
+                <h1>Test Result 3</h1>
+                <hr />
+                @TempData["Result3"]
+            </div>
+        </div>
+
+
+    </form>
+</div>
+

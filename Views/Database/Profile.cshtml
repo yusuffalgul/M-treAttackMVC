@@ -1,0 +1,32 @@
+﻿@model FinalProject.Models.Customer
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<form class="form-group" method="post">
+    <div style="margin : 15px;">
+        <label>CompanyName</label>
+        <input type ="text" class="form-control" name ="TxtUpdateCompanyName"></input>
+    </div>
+
+    <div style="margin : 15px;">
+        <label>ContactName</label>
+        <input type ="text" class="form-control" name="TxtUpdateContactName"></input>
+    </div>
+
+    <div style="margin : 15px;">
+        <label>PhoneNumber</label>
+        <input type="text" class="form-control" name="TxtUpdatePhoneNumber"></input>
+
+    </div>
+
+    <div style="margin : 15px;">
+        <label>Email</label>
+        <input type="text" class="form-control" name="TxtUpdateEmail"></input>
+    </div>
+
+
+    <button class="btn btn-success" style="margin-left : 13px;">Update</button>
+</form>
+
